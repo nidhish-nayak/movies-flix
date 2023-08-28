@@ -4,23 +4,23 @@
 </script>
 
 <main>
-	<h1 class="p-2 mt-6 text-xl text-center font-semibold">New Release</h1>
-	<ul class="flex flex-wrap justify-center m-2 p-4 rounded-lg">
+	<h1 class="p-2 mt-6 text-xl font-semibold text-center">New Release</h1>
+	<ul class="flex flex-wrap justify-center p-4 m-2">
 		{#each data.props.nowPlaying as item}
-			<li class="bg-slate-200 flex p-2 m-2 rounded-sm w-80">
+			<li class="flex p-3 m-2 rounded-md bg-slate-200 w-80">
 				<img
 					src={item.poster_path
 						? `https://image.tmdb.org/t/p/w500${item.poster_path}`
 						: 'https://source.unsplash.com/EEZgog4AS5M'}
 					alt={item.title}
-					class="w-28 relative h-min rounded-md"
+					class="relative w-28 h-min"
 				/>
-				<p class="absolute bg-white m-1 font-semibold text-xs rounded-md p-1">
+				<p class="absolute p-1 m-1 text-xs font-semibold bg-white rounded-full">
 					{item.vote_average.toFixed(1)}
 				</p>
-				<div class="flex justify-start align-top flex-col">
-					<h2 class="px-2 font-semibold">{item.title}</h2>
-					<p class="pb-2 pl-2 text-sm text-gray-500">{item.release_date}</p>
+				<div class="flex flex-col justify-start px-2 align-top">
+					<h2 class="font-semibold">{item.title}</h2>
+					<p class="text-sm text-gray-500">{item.release_date}</p>
 				</div>
 			</li>
 		{/each}
