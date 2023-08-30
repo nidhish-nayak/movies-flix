@@ -1,7 +1,7 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 
-export const POST: RequestHandler = async () => {
+export const GET: RequestHandler = async () => {
 	const posts = {
 		name: 'Nidhish D Nayak',
 		content: `

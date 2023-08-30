@@ -5,13 +5,7 @@
 	};
 
 	async function add() {
-		const response = await fetch('/api/posts', {
-			method: 'POST',
-			body: 'This is dummy data',
-			headers: {
-				'content-type': 'application/json'
-			}
-		});
+		const response = await fetch('/api/posts');
 
 		myData = await response.json();
 	}
