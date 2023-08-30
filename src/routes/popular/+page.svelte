@@ -1,1 +1,3 @@
-<h1>This is projects route</h1>
+<main>
+	<h1>This is projects route</h1>
+</main>

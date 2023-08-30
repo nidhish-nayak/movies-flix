@@ -5,7 +5,7 @@
 
 <main>
 	<h1 class="p-2 mt-6 text-xl font-semibold text-center">New Release</h1>
-	<ul class="flex flex-wrap justify-center p-4 m-2">
+	<ul class="flex flex-wrap justify-center p-4">
 		{#each data.props.nowPlaying as item}
 			<li class="flex p-3 m-2 rounded-md bg-slate-200 w-80">
 				<img
