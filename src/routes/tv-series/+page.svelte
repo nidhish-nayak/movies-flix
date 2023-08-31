@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <main>
-	<h1>This is TV SERIES Route</h1>
+	<h1>This is TV Series Route</h1>
 </main>
