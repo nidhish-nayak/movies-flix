@@ -5,7 +5,7 @@
 <nav>
 	<ul>
 		<li><a href="/">Home</a></li>
-		<li><a href="/popular">Popular</a></li>
+		<li><a href="/test-server">Test Server</a></li>
 		<li><a href="/tv-series">TV Series</a></li>
 	</ul>
 </nav>
