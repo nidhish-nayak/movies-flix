@@ -10,12 +10,11 @@
 	{#if data && data.props && data.props.nowPlaying}
 		<ul class="flex flex-wrap justify-center p-4">
 			{#each data.props.nowPlaying as movie (movie.id)}
-				<!-- Use the Card component -->
 				<Card {movie} />
 			{/each}
 		</ul>
 	{:else}
-		<!-- Handle the case when data is not available yet -->
+		<!--Loading page incase data is not fetched-->
 		<p>Loading...</p>
 	{/if}
 </main>

@@ -1,4 +1,3 @@
-// +page.ts
 import { MY_API_TOKEN } from '$lib/Env';
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';

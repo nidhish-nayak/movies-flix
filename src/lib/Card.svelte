@@ -1,4 +1,3 @@
-<!-- Card.svelte -->
 <script lang="ts">
 	export let movie: {
 		id: number;
@@ -9,7 +8,6 @@
 		overview: string;
 	};
 
-	// Function to calculate the full poster URL
 	function getPosterUrl() {
 		return movie.poster_path
 			? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
